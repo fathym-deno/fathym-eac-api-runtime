@@ -2,7 +2,7 @@ import { EaCRuntimeConfig, EaCRuntimePluginConfig } from '@fathym/eac/runtime/co
 import { EaCRuntimePlugin } from '@fathym/eac/runtime/plugins';
 import { EverythingAsCode } from '@fathym/eac';
 import { EverythingAsCodeApplications } from '@fathym/eac-applications';
-import { EaCProxyProcessor } from '@fathym/eac-applications/processors';
+import { EaCStewardAPIPlugin } from '@fathym/eac-applications/steward/plugins';
 
 export default class RuntimePlugin implements EaCRuntimePlugin {
   constructor() {}
@@ -12,13 +12,14 @@ export default class RuntimePlugin implements EaCRuntimePlugin {
       EverythingAsCode & EverythingAsCodeApplications
     > = {
       Name: RuntimePlugin.name,
-      Plugins: [],
+      Plugins: [new EaCStewardAPIPlugin()],
       EaC: {
         Projects: {
           core: {
             Details: {
-              Name: 'Core Golden Path Micro Applications',
-              Description: 'The Core Golden Path Micro Applications to use.',
+              Name: 'Fathy EaC Steward API Runtime',
+              Description:
+                'This runtime provides the EaC Steward APIs for interacting with the EaC Steward system (commits, status and more).',
               Priority: 100,
             },
             ResolverConfigs: {
@@ -30,57 +31,18 @@ export default class RuntimePlugin implements EaCRuntimePlugin {
                 Hostname: '127.0.0.1',
                 Port: config.Server.port || 8000,
               },
+              'host.docker.internal': {
+                Hostname: 'host.docker.internal',
+                Port: config.Server.port || 8000,
+              },
             },
             ModifierResolvers: {},
-            ApplicationResolvers: {
-              api: {
-                PathPattern: '/api*',
-                Priority: 300,
-              },
-              synaptic: {
-                PathPattern: '/api/synaptic*',
-                Priority: 500,
-              },
-              web: {
-                PathPattern: '*',
-                Priority: 100,
-              },
-            },
+            ApplicationResolvers: {},
           },
         },
-        Applications: {
-          api: {
-            Details: {
-              Name: 'API',
-              Description: 'The API proxy.',
-            },
-            ModifierResolvers: {},
-            Processor: {
-              Type: 'Proxy',
-              ProxyRoot: Deno.env.get('API_ROOT')!,
-            } as EaCProxyProcessor,
-          },
-          synaptic: {
-            Details: {
-              Name: 'Synaptic',
-              Description: 'The API for accessing synaptic cricuits',
-            },
-            ModifierResolvers: {},
-            Processor: {
-              Type: 'Proxy',
-              ProxyRoot: Deno.env.get('SYNAPTIC_ROOT')!,
-            } as EaCProxyProcessor,
-          },
-          web: {
-            Details: {
-              Name: 'Dashboard',
-              Description: 'The Dashboard.',
-            },
-            ModifierResolvers: {},
-            Processor: {
-              Type: 'Proxy',
-              ProxyRoot: Deno.env.get('WEB_ROOT')!,
-            } as EaCProxyProcessor,
+        $GlobalOptions: {
+          DFSs: {
+            PreventWorkers: true,
           },
         },
       },
