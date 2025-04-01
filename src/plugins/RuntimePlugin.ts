@@ -2,7 +2,7 @@ import { EaCRuntimeConfig, EaCRuntimePluginConfig } from '@fathym/eac/runtime/co
 import { EaCRuntimePlugin } from '@fathym/eac/runtime/plugins';
 import { EverythingAsCode } from '@fathym/eac';
 import { EverythingAsCodeApplications } from '@fathym/eac-applications';
-import { EaCStewardAPIPlugin } from '@fathym/eac-applications/steward/plugins';
+import { EaCStewardAPIPlugin, EaCStewardPlugin } from '@fathym/eac-applications/steward/plugins';
 
 export default class RuntimePlugin implements EaCRuntimePlugin {
   constructor() {}
@@ -12,7 +12,7 @@ export default class RuntimePlugin implements EaCRuntimePlugin {
       EverythingAsCode & EverythingAsCodeApplications
     > = {
       Name: RuntimePlugin.name,
-      Plugins: [new EaCStewardAPIPlugin()],
+      Plugins: [new EaCStewardAPIPlugin(), new EaCStewardPlugin()],
       EaC: {
         Projects: {
           core: {
