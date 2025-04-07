@@ -38,8 +38,8 @@ export default class RuntimePlugin implements EaCRuntimePlugin {
               'eac-steward.fathym.com': {
                 Hostname: 'eac-steward.fathym.com',
               },
-              'fathym-eac-api-runtime-fqbfc7bwbycreuga.westus2-01.azurewebsites.net': {
-                Hostname: 'fathym-eac-api-runtime-fqbfc7bwbycreuga.westus2-01.azurewebsites.net',
+              'fathym-eac-api-runtime.azurewebsites.net': {
+                Hostname: 'fathym-eac-api-runtime.azurewebsites.net',
               },
             },
             ModifierResolvers: {},
