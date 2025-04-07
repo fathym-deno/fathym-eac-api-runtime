@@ -26,10 +26,11 @@
     "version": "deno run -A jsr:@fathym/common@0/build/version"
   },
   "imports": {
-    "@fathym/common": "jsr:@fathym/common@0.2.179",
-    "@fathym/eac": "jsr:@fathym/eac@0.2.105",
+    "@fathym/common": "jsr:@fathym/common@0.2.184",
+    "@fathym/eac": "jsr:@fathym/eac@0.2.106",
     // "@fathym/eac/steward": "../../fathym-deno/eac/src/steward/.exports.ts",
-    "@fathym/eac-applications": "jsr:@fathym/eac-applications@0.0.138",
+    // "@fathym/eac/steward/plugins": "../../fathym-deno/eac/src/steward/plugins/.exports.ts",
+    "@fathym/eac-applications": "jsr:@fathym/eac-applications@0.0.139",
     // "@fathym/eac-applications/steward/plugins": "../../fathym-deno/eac-applications/src/steward/plugins/.exports.ts",
     "@fathym/ioc": "jsr:@fathym/ioc@0.0.14",
     "@std/assert": "jsr:@std/assert@1.0.6",
