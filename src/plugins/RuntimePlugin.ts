@@ -35,11 +35,11 @@ export default class RuntimePlugin implements EaCRuntimePlugin {
                 Hostname: 'host.docker.internal',
                 Port: config.Servers![0].port || 8000,
               },
-              'fathym-eac-api-runtime-fqbfc7bwbycreuga.westus2-01.azurewebsites.net': {
-                Hostname: 'fathym-eac-api-runtime-fqbfc7bwbycreuga.westus2-01.azurewebsites.net',
-              },
               'eac-steward.fathym.com': {
                 Hostname: 'eac-steward.fathym.com',
+              },
+              'fathym-eac-api-runtime-fqbfc7bwbycreuga.westus2-01.azurewebsites.net': {
+                Hostname: 'fathym-eac-api-runtime-fqbfc7bwbycreuga.westus2-01.azurewebsites.net',
               },
             },
             ModifierResolvers: {},
