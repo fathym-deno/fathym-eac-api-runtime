@@ -26,7 +26,7 @@
     "version": "deno run -A jsr:@fathym/common@0/build/version"
   },
   "imports": {
-    "@fathym/common": "jsr:@fathym/common@0.2.184",
+    "@fathym/common": "jsr:@fathym/common@0.2.261",
     "@fathym/eac": "jsr:@fathym/eac@0.2.111",
     // "@fathym/eac/steward": "../../fathym-deno/eac/src/steward/.exports.ts",
     // "@fathym/eac/steward/plugins": "../../fathym-deno/eac/src/steward/plugins/.exports.ts",
