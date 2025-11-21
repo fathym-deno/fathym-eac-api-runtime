@@ -26,12 +26,12 @@
     "version": "deno run -A jsr:@fathym/common@0/build/version"
   },
   "imports": {
-    "@fathym/common": "jsr:@fathym/common@0.2.273",
+    "@fathym/common": "jsr:@fathym/common@0.2.289-integration",
     // "@fathym/eac/steward": "../eac/src/steward/.exports.ts",
     // "@fathym/eac/steward/plugins": "../eac/src/steward/plugins/.exports.ts",
     // "@fathym/eac/steward/utils": "../eac/src/steward/utils/.exports.ts",
-    "@fathym/eac": "jsr:@fathym/eac@0.2.139-hmis",
-    "@fathym/eac-applications": "jsr:@fathym/eac-applications@0.0.203",
+    "@fathym/eac": "jsr:@fathym/eac@0.2.141-hmis",
+    "@fathym/eac-applications": "jsr:@fathym/eac-applications@0.0.242-mcp-processor",
     // "@fathym/eac-applications": "../eac-applications/src/applications/.exports.ts",
     // "@fathym/eac-applications/modifiers": "../eac-applications/src/applications/modifiers/.exports.ts",
     // "@fathym/eac-applications/preact": "../eac-applications/src/preact/.exports.ts",
@@ -47,7 +47,7 @@
     // "@fathym/eac-applications/steward/api": "../eac-applications/src/steward/api/.exports.ts",
     // "@fathym/eac-applications/steward/plugins": "../eac-applications/src/steward/plugins/.exports.ts",
     // "@fathym/eac-applications/utils": "../eac-applications/src/utils/.exports.ts",
-    "@fathym/ioc": "jsr:@fathym/ioc@0.0.14",
+    "@fathym/ioc": "jsr:@fathym/ioc@0.0.21",
     "@std/assert": "jsr:@std/assert@1.0.6",
     "@std/log": "jsr:@std/log@0.224.14",
     "preact": "npm:preact@10.20.1"
