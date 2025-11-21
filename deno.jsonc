@@ -30,7 +30,7 @@
     // "@fathym/eac/steward": "../eac/src/steward/.exports.ts",
     // "@fathym/eac/steward/plugins": "../eac/src/steward/plugins/.exports.ts",
     // "@fathym/eac/steward/utils": "../eac/src/steward/utils/.exports.ts",
-    "@fathym/eac": "jsr:@fathym/eac@0.2.130",
+    "@fathym/eac": "jsr:@fathym/eac@0.2.139-hmis",
     "@fathym/eac-applications": "jsr:@fathym/eac-applications@0.0.203",
     // "@fathym/eac-applications": "../eac-applications/src/applications/.exports.ts",
     // "@fathym/eac-applications/modifiers": "../eac-applications/src/applications/modifiers/.exports.ts",

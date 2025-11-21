@@ -33,5 +33,4 @@ References:
 ## Verification
 
 - Tests/lint/fmt pass; links relative; single-line paragraphs maintained.
-- API changes documented with migration notes; downstream impacts called out.
-EOF
+- API changes documented with migration notes; downstream impacts called out. EOF
