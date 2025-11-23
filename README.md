@@ -8,11 +8,11 @@ Updated: 2025-11-20
 Owners:
   - fathym
 References:
-  - Label: EaC Sub-Area README
+  - Label: EaC Apps Area README
     Path: ../README.md
-  - Label: EaC Sub-Area AGENTS
+  - Label: EaC Apps Area AGENTS
     Path: ../AGENTS.md
-  - Label: EaC Sub-Area GUIDE
+  - Label: EaC Apps Area GUIDE
     Path: ../GUIDE.md
   - Label: Projects README
     Path: ../../README.md

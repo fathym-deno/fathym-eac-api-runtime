@@ -12,11 +12,11 @@ References:
     Path: ./README.md
   - Label: Project GUIDE
     Path: ./GUIDE.md
-  - Label: EaC Sub-Area README
+  - Label: EaC Apps Area README
     Path: ../README.md
-  - Label: EaC Sub-Area AGENTS
+  - Label: EaC Apps Area AGENTS
     Path: ../AGENTS.md
-  - Label: EaC Sub-Area GUIDE
+  - Label: EaC Apps Area GUIDE
     Path: ../GUIDE.md
   - Label: Projects AGENTS
     Path: ../../AGENTS.md
