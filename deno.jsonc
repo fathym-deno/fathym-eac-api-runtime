@@ -15,7 +15,7 @@
     "build:main": "deno run -A main.ts build",
     "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "clean:docker": "docker stop fathym-eac-api-runtime || true && docker rm fathym-eac-api-runtime || true",
-    "deploy": "npx rimraf cov && deno task build && deno task test && npx ftm git",
+    "deploy": "npx rimraf cov && deno task build && deno task test && npx fathym git",
     "deploy:docker": "docker run --name fathym-eac-api-runtime --network eac-runtimes --env-file .env.docker -dp 127.0.0.1:5100:5100 -v C:\\fathym\\denokv\\fathym-eac:/_project/denokv --restart always fathym-eac-api-runtime",
     "dev": "deno run -A --watch=apps/,configs/,data/,routes/,src/,static/ dev.ts",
     "network:docker": "docker network create eac-runtimes || true",
