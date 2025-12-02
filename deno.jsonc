@@ -1,5 +1,5 @@
 {
-  "name": "@fathym/fathym-eac-api-runtime",
+  "name": "@fathym/eac-api-runtime",
   "version": "0.0.0",
   "exports": {
     ".": "./main.ts",
@@ -27,9 +27,9 @@
   },
   "imports": {
     "@fathym/common": "jsr:@fathym/common@0.2.299",
-    "@fathym/eac": "jsr:@fathym/eac@0.2.163-hmis",
-    "@fathym/eac-applications": "jsr:@fathym/eac-applications@0.0.263-mcp-processor",
-    "@fathym/eac-apps-pack": "jsr:@fathym/eac-apps-pack@0.0.7-integration",
+    "@fathym/eac": "jsr:@fathym/eac@0.2.168-hmis",
+    "@fathym/eac-applications": "jsr:@fathym/eac-applications@0.0.268-mcp-processor",
+    "@fathym/eac-apps-pack": "jsr:@fathym/eac-apps-pack@0.0.10-integration",
     "@fathym/ioc": "jsr:@fathym/ioc@0.0.21",
     "@std/assert": "jsr:@std/assert@1.0.6",
     "@std/log": "jsr:@std/log@0.224.14",
