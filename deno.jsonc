@@ -27,9 +27,9 @@
   },
   "imports": {
     "@fathym/common": "jsr:@fathym/common@0.2.299",
-    "@fathym/eac": "jsr:@fathym/eac@0.2.185-hmis",
-    "@fathym/eac-applications": "jsr:@fathym/eac-applications@0.0.290-mcp-processor",
-    "@fathym/eac-apps-pack": "jsr:@fathym/eac-apps-pack@0.0.16-integration",
+    "@fathym/eac": "jsr:@fathym/eac@0.2.196-hmis",
+    "@fathym/eac-applications": "jsr:@fathym/eac-applications@0.0.302-mcp-processor",
+    "@fathym/eac-apps-pack": "jsr:@fathym/eac-apps-pack@0.0.18-integration",
     "@fathym/ioc": "jsr:@fathym/ioc@0.0.25",
     "@std/assert": "jsr:@std/assert@1.0.6",
     "@std/log": "jsr:@std/log@0.224.14",
