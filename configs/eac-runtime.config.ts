@@ -1,5 +1,5 @@
 import { EaCRuntime } from '@fathym/eac/runtime';
-import { defineEaCApplicationsConfig } from '@fathym/eac-applications/runtime';
+import { defineEaCApplicationsConfig } from '@fathym/eac-apps-pack/config';
 import RuntimePlugin from '../src/plugins/RuntimePlugin.ts';
 import { RuntimeLoggingProvider } from '../src/logging/RuntimeLoggingProvider.ts';
 import { EaCRuntimeHandlerRouteGroup } from '@fathym/eac/runtime/pipelines';
